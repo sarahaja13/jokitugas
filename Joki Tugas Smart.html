@@ -12893,6 +12893,285 @@ height:280px;
     background:#eeeeee;
     color:#222 !important;
 
+}
+
+/* ==========================================
+   RATING PAGE
+========================================== */
+
+.rating-wrapper{
+    position:relative;
+    z-index:20;
+
+    width:min(650px,95vw);
+
+    margin:40px auto;
+
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.rating-card{
+
+    background:rgba(8,25,70,.82);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(34,211,238,.2);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    color:white;
+
+    text-align:center;
+
+    box-sizing:border-box;
+}
+
+.rating-icon{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+}
+
+.rating-card h2{
+
+    margin:0;
+
+    font-size:42px;
+
+    color:white;
+}
+
+.rating-subtitle{
+
+    margin:18px auto 35px;
+
+    color:#c9ddff;
+
+    line-height:1.7;
+
+    max-width:520px;
+}
+
+/* =====================
+   STARS
+===================== */
+
+.star-rating{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:20px;
+}
+
+.star-rating span{
+
+    font-size:52px;
+
+    cursor:pointer;
+
+    opacity:.25;
+
+    transition:.2s;
+}
+
+.star-rating span.active{
+
+    opacity:1;
+
+    transform:scale(1.12);
+}
+
+.star-rating span:hover{
+
+    transform:scale(1.18);
+}
+
+.rating-text{
+
+    min-height:28px;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+    color:#7ee4ff;
+
+    font-weight:600;
+}
+
+/* =====================
+   TEXTAREA
+===================== */
+
+.testimonial-wrap{
+
+    text-align:left;
+}
+
+.testimonial-wrap label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+}
+
+.testimonial-wrap textarea{
+
+    width:100%;
+
+    min-height:150px;
+
+    padding:18px;
+
+    box-sizing:border-box;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    resize:vertical;
+
+    font-size:16px;
+}
+
+.testimonial-wrap textarea::placeholder{
+
+    color:#9fb6d8;
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+.submit-rating-btn{
+
+    margin-top:30px;
+
+    width:100%;
+
+    height:62px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2962ff,
+        #00d9ff
+    );
+
+    transition:.25s;
+}
+
+.submit-rating-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 25px rgba(0,217,255,.35);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .rating-wrapper{
+
+        width:100%;
+
+        padding:15px;
+
+        margin:20px auto;
+    }
+
+    .rating-card{
+
+        padding:25px 18px;
+
+        border-radius:20px;
+    }
+
+    .rating-icon{
+
+        font-size:54px;
+    }
+
+    .rating-card h2{
+
+        font-size:30px;
+    }
+
+    .rating-subtitle{
+
+        font-size:15px;
+
+        line-height:1.6;
+
+        margin-bottom:25px;
+    }
+
+    .star-rating{
+
+        gap:8px;
+    }
+
+    .star-rating span{
+
+        font-size:42px;
+    }
+
+    .rating-text{
+
+        font-size:15px;
+
+        margin-bottom:22px;
+    }
+
+    .testimonial-wrap textarea{
+
+        min-height:120px;
+
+        font-size:15px;
+
+        padding:15px;
+    }
+
+    .submit-rating-btn{
+
+        height:56px;
+
+        font-size:17px;
+    }
+
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">var uiBar = document.getElementById('ui-bar');
 if (uiBar) {
     uiBar.remove();
